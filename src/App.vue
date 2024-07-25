@@ -24,4 +24,10 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
+section {
+  margin: 60px 0;
+  display: flex;
+  width: 100vw;
+}
 </style>

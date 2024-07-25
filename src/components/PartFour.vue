@@ -9,19 +9,21 @@ const displayRandomNumber = () => {
 </script>
 
 <template>
-  <div>
+  <section>
     <button @:click="displayRandomNumber">Chiffre surprise</button>
-  </div>
+  </section>
 </template>
 
 <style scoped>
+section {
+  justify-content: center;
+}
 button {
   background-color: #fc7440;
   border: none;
   border-style: double;
   color: white;
   padding: 65px 20px;
-  text-align: center;
   font-size: 16px;
   border-radius: 50%;
 }

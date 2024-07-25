@@ -5,16 +5,19 @@ const displayNetwork = (network) => {
 </script>
 
 <template>
-  <div>
+  <section>
     <font-awesome-icon @click="displayNetwork('Github')" :icon="['fab', 'github']" />
     <font-awesome-icon @click="displayNetwork('LinkedIn')" :icon="['fab', 'linkedin']" />
     <font-awesome-icon @click="displayNetwork('Instagram')" :icon="['fab', 'instagram']" />
-  </div>
+  </section>
 </template>
 
 <style scoped>
+section {
+  justify-content: center;
+  gap: 30px;
+}
 svg {
   font-size: 48px;
-  padding: 10px;
 }
 </style>
