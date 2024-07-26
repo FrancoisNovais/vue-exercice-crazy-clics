@@ -1,16 +1,11 @@
-<script setup>
-const handleClick = () => {
-  console.log('Hello world !')
-}
-const handleClickTwo = () => {
-  console.log('Bienvenue au Reacteur !')
-}
-</script>
+<script setup></script>
 
 <template>
   <section>
-    <button v-on:click="handleClick">Affiche un message dans la console</button>
-    <button @:click="handleClickTwo">Affiche un autre message dans la console</button>
+    <button v-on:click="console.log('Hello world !')">Affiche un message dans la console</button>
+    <button @:click="console.log('Bienvenue au Reacteur !')">
+      Affiche un autre message dans la console
+    </button>
   </section>
 </template>
 

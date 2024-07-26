@@ -4,7 +4,7 @@ function getRandomInt(max) {
 }
 
 const displayRandomNumber = () => {
-  alert(getRandomInt(99))
+  alert(getRandomInt(100))
 }
 </script>
 
@@ -20,10 +20,10 @@ section {
 }
 button {
   background-color: #fc7440;
-  border: none;
-  border-style: double;
+  border: double rgb(237, 218, 151);
   color: white;
-  padding: 65px 20px;
+  width: 160px;
+  height: 160px;
   font-size: 16px;
   border-radius: 50%;
 }

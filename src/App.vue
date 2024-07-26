@@ -7,6 +7,7 @@ import PartFive from './components/PartFive.vue'
 import PartSix from './components/PartSix.vue'
 import Bonus1 from './components/Bonus1.vue'
 import Bonus2 from './components/Bonus2.vue'
+import Bonus3 from './components/Bonus3.vue'
 </script>
 <template>
   <main>
@@ -19,6 +20,7 @@ import Bonus2 from './components/Bonus2.vue'
     <PartSix />
     <Bonus1 />
     <Bonus2 />
+    <Bonus3 />
   </main>
 </template>
 

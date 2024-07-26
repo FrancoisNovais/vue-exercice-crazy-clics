@@ -12,12 +12,9 @@ const colorsList = [
   'gris'
 ]
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max)
-}
-
 const randomColor = () => {
-  alert(colorsList[getRandomInt(10)])
+  const randomIndex = Math.floor(Math.random() * colorsList.length)
+  alert(colorsList[randomIndex])
 }
 </script>
 

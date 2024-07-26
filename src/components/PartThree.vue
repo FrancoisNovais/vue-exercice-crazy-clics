@@ -16,8 +16,9 @@ const displayColor = (colorName) => {
     <div class="color-list">
       <div @click="displayColor('bleue')" class="blueBg"></div>
       <div @click="displayColor('violette')" class="purpleBg"></div>
-      <div @click="displayColor('orange')" class="orangeBg"></div>
-      <div @click="displayColor('verte')" class="greenBg"></div>
+      <!-- With dynamic style inline -->
+      <div @click="displayColor('orange')" :style="{ backgroundColor: colors.orange }"></div>
+      <div @click="displayColor('verte')" :style="{ backgroundColor: colors.verte }"></div>
     </div>
   </section>
 </template>
@@ -43,11 +44,5 @@ section {
 }
 .purpleBg {
   background-color: #a519a5;
-}
-.orangeBg {
-  background-color: #ffa500;
-}
-.greenBg {
-  background-color: #44f178;
 }
 </style>

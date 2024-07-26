@@ -5,14 +5,15 @@ const word3 = 'ElEpHaNt'
 const word4 = 'wombaT'
 
 const correctTheWord = (word) => {
-  const firstLetter = word.charAt(0)
-
-  const firstLetterCap = firstLetter.toUpperCase()
-
-  const remainingLetters = word.slice(1).toLowerCase()
-
-  const capitalizedWord = firstLetterCap + remainingLetters
-  alert(capitalizedWord)
+  let str = ''
+  for (let i = 0; i < word.length; i++) {
+    if (i === 0) {
+      str = str + word[i].toUpperCase()
+    } else {
+      str = str + word[i].toLowerCase()
+    }
+  }
+  alert(str)
 }
 </script>
 
